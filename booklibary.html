@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link href="booklibrary.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <a href="booklibary.html"><h1>Book<span style="font-weight: 600; color: rgb(7, 172, 120)">Library</span></h1></a>
+        <div style="display: flex; flex-direction: row">
+            <button id="addBookBut"><i class="bi bi-plus-circle"></i></button>
+            <form id="searchForm">
+                <input id="searchText" type="text">
+                <button id="search"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <hr id="hr">
+    <div id="manualAddDiv">
+        <form id="manualForm">
+            <div id="errorDiv"><p>Please fill all the information.</p></div>
+            <div id="formInner-div">
+                <label for="bookName">Name</label>
+                <input type="text" id="bookName" maxlength="17">
+            </div>
+            <div id="formInner-div">
+                <label for="bookAuthor">Author</label>
+                <input type="text" id="bookAuthor" maxlength="17">
+            </div>
+            <div id="formInner-div">
+                <label for="bookPages">Pages</label>
+                <input type="number" id="bookPages" maxlength="4">
+            </div>
+            <div style="min-width: 220px; display: flex; flex-direction: row; justify-content: space-between">
+                <input id="formSubmitBut" type="submit" value="Add book">
+                <button id="cancelBut">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id="addedBooks-div"></div>
+    <div id="searchDiv">
+
+    </div>
+   
+    <div id="creator">
+        <p>Created by <span style="color: #000000; font-weight: 700;">Vugar Nasraddinli</span></p>
+        <div id="work-icon">
+            <a href="https://github.com/vugvr617" target="_blank"><i class="fa fa-github"
+                    style="font-size:36px"></i></a>
+            <a href="https://www.linkedin.com/in/vugar-nasraddinli/" target="_blank"><i class="fa fa-linkedin-square"
+                    style="font-size:36px"></i></a>
+        </div>
+    </div>
+    <script src="booklibrary.js"></script>
+</body>
+
+</html>
